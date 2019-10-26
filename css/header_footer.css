@@ -23,6 +23,33 @@ body {
 	height: 1000px;
 }
 
+.footer {
+	height: 70px;
+	width: 100%;
+	background-color: blue;
+	opacity: 1;
+	padding-left: 10em;
+	padding-right: 10em;
+}
+
+.footer_text {
+	position: absolute;
+	bottom: 1rem;
+	color: black;
+	z-index: 2000;
+	font-size: 29px;
+}
+
+.footer_nav {
+	float: right;
+}
+
+.footer_social {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
 
 .menu {
 	height: 70px;
