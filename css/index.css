@@ -37,9 +37,13 @@ body {
     text-align: center;
 }
 
-#latest-posts header{
+header h1 {
     text-transform: uppercase;
     text-align: center;
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin: 0.8em 0 auto;
+    font-weight: normal; 
 }
 
 .post {
@@ -110,6 +114,10 @@ p {
 @media (max-width: 600px) { /* width at which layout changes  */
     .post {
         width: 80%;
+    }
+
+    header h1 {
+        font-size: 30px;
     }
 }
 
