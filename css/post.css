@@ -3,7 +3,7 @@
    position: relative;
    height: 700px;
    background: no-repeat top center;
-   background-image: url(../images/Tina_resized.jpg); 
+   background-image: url(../images/Tina_resized.jpg);
    background-size: cover;
    width:100%;
    display: table;
@@ -54,8 +54,9 @@
 }
 
 @media (max-width: 900px) {
-  #quote {
+  #person_header #quote {
     width: 100%;
     padding: 7%;
+    display: none;
   }
 }
