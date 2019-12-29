@@ -1,0 +1,20 @@
+.featured-post {
+  width: 20%;
+
+  display: inline-block;
+}
+
+.featured-post-header {
+  background: no-repeat top center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+}
+.featured-post-header > h2 {
+  position: absolute;
+  bottom: 0px;
+  margin: 0;
+  padding: 5px;
+  color: white;
+  background: blue;
+}
