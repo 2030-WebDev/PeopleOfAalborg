@@ -1,31 +1,34 @@
-html, body {
-    height: 100%;
-    width: 100%;
-}
 body {
     padding: 0;
     margin: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 #header-section {
     width:100%;
     height:700px;
-    background: url("../images/Header.png") no-repeat top center;
+      background: url("../images/Header.png") no-repeat top center;
     background-size: cover;
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    position: relative;
+    display: table;
 }
 
 #header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    text-align: center;
     font-family: 'Abril Fatface', cursive;
     font-size: 1.3em;
     color: #FFFEFE;
     text-transform: uppercase;
+}
+
+#header-section #header {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /*Article*/
@@ -37,39 +40,38 @@ body {
     text-align: center;
 }
 
-header h1 {
+#latest-posts header{
     text-transform: uppercase;
     text-align: center;
-    font-size: 40px;
-    letter-spacing: 4px;
-    margin: 0.8em 0 auto;
-    font-weight: normal; 
 }
 
 .post {
+    vertical-align:top;
     display: inline-block;
     width: 28%;
     margin: 2.4%;
+    box-shadow: 7px 7px 10px -3px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.post:hover {
+    box-shadow: none;
 }
 
 .image-name {
     position: relative;
     background: url("../images/stella_alone.jpeg") no-repeat top center;
-    background-size: cover; 
+    background-size: cover;
     height: 200px;
-}
-
-.quoteSection {
-    margin: 2em 2em;
-}
-
-p {
-    margin: 0;
 }
 
 .quote {
     font-size: 14px;
     margin: 2em auto;
+}
+
+p.name {
+    margin: 0;
 }
 
 .name {
@@ -100,12 +102,15 @@ p {
     font-weight: bold;
 }
 
-/*Ipad and Mobile*/
+.quoteSection {
+    margin: 2em 2em;
+}
+
 @media (max-width: 950px) { /* width at which layout changes  */
     #latest-posts {
         width: 100%;
     }
-    
+
     .post {
         width: 40%;
     }
@@ -120,4 +125,3 @@ p {
         font-size: 30px;
     }
 }
-

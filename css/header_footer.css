@@ -16,16 +16,14 @@ body {
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
-  color: white;
-  padding: 0; 
+  color: black;
+  padding: 0;
   margin: 0px auto;
   background: white;
 }
 
 .content {
 	width: 100%;
-	background: black;
-	height: 1000px;
 }
 
 .footer {
@@ -69,8 +67,11 @@ body {
 	color: white;
 }
 
+/* TOP MENU */
+
 .menu {
 	height: 70px;
+  line-height: 70px;
 	width: 100%;
 	background-color: white;
 	opacity: 0.8;
@@ -78,13 +79,9 @@ body {
 	padding-right: 10em;
 }
 
-/*
-.menu_title {
-	width: 30%;
-	float: left;
+.menu > * {
+  line-height: 70px;
 }
-*/
-
 
 .menu_nav {
   float: right;
@@ -103,7 +100,6 @@ body {
 	color: black;
 	padding-left: 5em;
 	height: 70px;
-	line-height: 70px;
 }
 
 .menu_link:link, .menu_link:visited {
@@ -124,10 +120,48 @@ body {
 
 .menu_title {
 	position: absolute;
-	top: 1rem;
 	color: black;
 	z-index: 2000;
 	font-size: 29px;
 	font-family: "Libre Baskerville", sans-serif;
 }
 
+@media (max-width: 850px) {
+  .menu_title {
+    position: relative;
+    line-height: 1em;
+  }
+  .menu_list_item {
+    display: block;
+    padding: 0;
+    line-height: 1.2em;
+    height: 1.5em;
+  }
+  .menu  {
+    margin: auto;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+  }
+  .menu_nav {
+    float: none;
+  }
+
+  .footer_nav {
+    display: block;
+    float: none;
+  }
+
+  .footer {
+  	height: 200px;
+  	width: 100%;
+  	background-color: #080A24;
+  	opacity: 1;
+  	padding: 0;
+    text-align: center;
+  }
+  .footer_social_item {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
