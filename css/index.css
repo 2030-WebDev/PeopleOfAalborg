@@ -47,6 +47,7 @@ button {
 #latest-posts header{
     text-transform: uppercase;
     text-align: center;
+    font-size: 2em;
 }
 
 .post {
