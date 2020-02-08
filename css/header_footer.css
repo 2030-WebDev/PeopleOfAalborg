@@ -70,8 +70,8 @@ body {
 /* TOP MENU */
 
 .menu {
-	height: 70px;
-  line-height: 70px;
+	height: 9vh;
+  line-height: 9vh;
 	width: 100%;
 	background-color: white;
 	opacity: 0.8;
@@ -127,6 +127,10 @@ body {
 }
 
 @media (max-width: 850px) {
+  #header-section {
+    height: 78vh;
+  }
+
   .menu_title {
     position: relative;
     line-height: 1em;
@@ -142,6 +146,7 @@ body {
     text-align: center;
     height: auto;
     padding: 10px;
+    height: 22vh;
   }
   .menu_nav {
     float: none;
