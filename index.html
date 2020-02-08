@@ -13,16 +13,18 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+  
 	<div class="menu">
     <span class="menu_title">People of Aalborg</span>
-    <button id="menu_btn" >C</button>
+    <img src="images/dropdown.png" alt="menu" id="menu_btn">
 		<nav class="menu_nav">
 			<ul class="menu_list">
 				<li class="menu_list_item"><a class="menu_link" href="index.html">Home</a></li>
 				<li class="menu_list_item"><a class="menu_link" href="postList.html">Stories</a></li>
 				<li class="menu_list_item"><a class="menu_link" href="about.html">About</a></li>
 			</ul>
-		</nav>
+    </nav>
+    <div id="empty" style="height: 10px;"></div>
 	</div>
   	<!-- MAIN -->
 	<main>
@@ -96,8 +98,9 @@
   <script>
     $("#menu_btn").click(function(){
       $(".menu_nav").toggle();
+      $("#empty").toggle();
     })
-
+    
     
   </script>
 </body>
