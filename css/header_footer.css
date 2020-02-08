@@ -125,8 +125,19 @@ body {
 	font-size: 29px;
 	font-family: "Libre Baskerville", sans-serif;
 }
+#menu_btn{
+  visibility: hidden;
+  position: absolute;
+  right: 50px;
+  height: 50px;
+  text-align: center;
+}
 
 @media (max-width: 850px) {
+  #menu_btn{
+    visibility: visible;
+  }
+  
   #header-section {
     height: 78vh;
   }
@@ -148,8 +159,10 @@ body {
     padding: 10px;
     height: 22vh;
   }
+  
   .menu_nav {
     float: none;
+    display: none;
   }
 
   .footer_nav {
