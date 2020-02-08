@@ -7,20 +7,24 @@
   <link rel="stylesheet" type="text/css" href="css/about.css">
   <link rel="stylesheet" type="text/css" href="css/stories.css">
   <link rel="stylesheet" type="text/css" href="css/post.css">
+  <script src="jquery-3.4.1.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+  
 	<div class="menu">
-	  <span class="menu_title"><a href="index.html">People of Aalborg</a></span>
+    <span class="menu_title">People of Aalborg</span>
+    <img src="images/dropdown.png" alt="menu" id="menu_btn">
 		<nav class="menu_nav">
 			<ul class="menu_list">
 				<li class="menu_list_item"><a class="menu_link" href="index.html">Home</a></li>
 				<li class="menu_list_item"><a class="menu_link" href="postList.html">Stories</a></li>
 				<li class="menu_list_item"><a class="menu_link" href="about.html">About</a></li>
 			</ul>
-		</nav>
+    </nav>
+    <div id="empty" style="height: 10px;"></div>
 	</div>
   	<!-- MAIN -->
 	<main>
@@ -90,6 +94,14 @@
 				<li class="footer_social_item"><a href="#" class="social_link tw" title="Join us on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 			</ul>
 		</nav>
-	</div>
+  </div>
+  <script>
+    $("#menu_btn").click(function(){
+      $(".menu_nav").toggle();
+      $("#empty").toggle();
+    })
+    
+    
+  </script>
 </body>
 </html>
