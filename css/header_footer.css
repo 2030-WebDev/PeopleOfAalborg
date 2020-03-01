@@ -136,6 +136,9 @@ body {
  
   
 }
+.menu_nav1{
+  display: none;
+}
 #empty{
     display:none;
 }
@@ -143,7 +146,9 @@ body {
   #menu_btn{
     visibility: visible;
   }
-  
+  .menu_nav{
+    display: none;
+  }
   #header-section {
     height: 78vh;
   }
@@ -152,7 +157,7 @@ body {
     position: relative;
     line-height: 1em;
   }
-  .menu_list_item {
+  .menu_list_item1 {
     
     display: block;
     padding: 0;
@@ -169,7 +174,7 @@ body {
     
   }
   
-  .menu_nav {
+  .menu_nav1 {
     float: none;
     display: none;
   }
